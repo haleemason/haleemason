@@ -1,3 +1,15 @@
+
+@import "compass/css3";
+
+@import "compass/reset";
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+@import url(https://fonts.googleapis.com/css?family=Bevan);
+
+
 /*gallery by https://codepen.io/sschepis*/
 .tps-section {
 	width: 100%;
@@ -654,7 +666,7 @@ body{
 	margin-bottom: 45px;
 	margin-top:-45px;
 	border-bottom: 15px solid snow;
-    box-shadow: 0px 10px 25px #666;
+	box-shadow: 0px 10px 25px #666;
 
 }
 
@@ -665,7 +677,42 @@ body{
 .custom-text-h1{
 	color:snow;
 	font-size:45px;
+	text-transform: uppercase;
+	font-size: 65px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	line-height: .8;
+	padding-top: 50px;
+	font-family: 'Montserrat', sans-serif;
+
 }
 
+.custom-text-h1:before {
+	content: "[";
+	color: #3498db;
+	line-height:40px;
+	font-size: 90px;
+}
+
+.custom-text-h1:after {
+	content: "]";
+	color: #3498db;
+	line-height:40px;
+	font-size: 90px;
+}
+
+.lead-text{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: 'Montserrat', sans-serif;
+	color: snow;
+	text-align: center;
+	display: block;
+
+}
+
+.accent {
+	color: #3498db;
+}
 
 
