@@ -40,7 +40,6 @@ export default Ember.Component.extend({
 					}
 				}
 				$(window).on('DOMContentLoaded load resize scroll', function () {
-					console.log('ddddddd')
 					el.find(settings.sectionContainer).each(function () {
 						elementVisibilityMayChange($(this));
 					});
