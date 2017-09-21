@@ -114,7 +114,7 @@ pre code {
 }
 
 .main h1 {
-	padding: 20px 50px 10px;
+	padding: 20px 85px 10px;
 	float: left;
 	width: 100%;
 	font-size: 60px;
@@ -726,6 +726,11 @@ h3{
 	color:snow;
 	font-family: 'Montserrat', sans-serif;
 
+}
+
+.white{
+	color:snow;
+	font-family: 'Montserrat', sans-serif;
 }
 
 
