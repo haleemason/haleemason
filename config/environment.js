@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix:'ryanmason',
     environment: environment,
-    rootURL: '/',
+    rootURL: '',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -45,7 +45,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.locationType = 'hash';
-    ENV.rootURL = '/'; 
+    ENV.rootURL = ''; 
 
   }
 
