@@ -1,10 +1,9 @@
-/* eslint-env node */
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix:'ryanmason',
+    modulePrefix: 'ryanmason',
     environment: environment,
-    rootURL: '',
+    rootURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -31,7 +30,6 @@ module.exports = function(environment) {
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
-
   if (environment === 'test') {
     // Testem prefers this...
     ENV.locationType = 'none';
@@ -45,9 +43,9 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.locationType = 'hash';
-    ENV.rootURL = ''; 
+    ENV.rootURL = '/ryanmason/';
 
-  } 
+  }
 
   return ENV;
 };
