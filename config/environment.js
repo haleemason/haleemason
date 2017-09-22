@@ -47,7 +47,7 @@ module.exports = function(environment) {
     ENV.locationType = 'hash';
     ENV.rootURL = ''; 
 
-  }
+  } 
 
   return ENV;
 };
