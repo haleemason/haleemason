@@ -2,6 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
+    modulePrefix:'/',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
