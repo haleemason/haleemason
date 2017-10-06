@@ -1,30 +1,25 @@
-/* If you use any of this, it'd be nice to mention my name.
 
-Andrew Tunnecliffe - 2014
-
-*/
+@import "pod-styles.css";
 
 body, html {
   height:100%;
   width:100%;
   margin:0;
   transition:all 1s ease-in-out; 
+  color:snow;
+  font-family: 'Raleway', sans-serif;
 }
 
-p {
-  font-family: 'Roboto', sans-serif;
-}
+/* layout made by
+  Andrew Tunnecliffe - 2014
+*/
 
-/* Colours are `400` or `500` from Google's Material Design guidelines */
 
-/* So at the start everything was just a floated inline block element, but when I wanted to animate them shrinking this became impossible. So everything is now an absolute child of the body element. */
-
-/* Location and size of base units */
 .loading {
   position:absolute;
   height:100%;
   width:100%;
-  background:#26A69A;
+  background:#329CC9;
   z-index:11;
   animation:fadeout 0.5s forwards 1s;
 }
@@ -53,11 +48,13 @@ p {
  color: transparent;
  animation: ellipsis .75s steps(3) 5;
 }
-.inner p {
+.loading > .inner > .ellipsis{
+  position: absolute;
+  top:50%;
+}
+.inner h1{
   font-size:xx-large;
-  position:absolute;
   margin:0; 
-  top: 50%;
   width:100%;
   text-align:center;
 }
@@ -70,14 +67,14 @@ p {
 /* Items */
 .item:nth-child(2) {
   z-index:10;
-  background: #00BCD4;
+  background: #329CC9;
   width:100%;
   height:100%;
   animation: slidein1 0.4s forwards 1.2s;
 }
 .item:nth-child(3){
   z-index:9;
-  background:#f44336;
+  background:#3170C4;
   right:0;
   width:50%;
   height:100%;
@@ -87,7 +84,7 @@ p {
   z-index:8;
   left:50%;
   bottom:0;
-  background:#ffeb3b;
+  background:#1D3461;
   width:50%;
   height:50%;
   animation: slidein3 0.4s forwards 1.6s;
@@ -96,7 +93,7 @@ p {
   z-index:7;
   right:0;
   top:50%;
-  background:#4CAF50;
+  background:#21897E;
   width:25%;
   height:50%;
   animation: slidein4 0.4s forwards 1.8s;
@@ -105,7 +102,7 @@ p {
   z-index:6; 
   left:75%;
   bottom:0;
-  background:#2196F3;
+  background:#41D3BD;
   width:25%;
   height:25%;
 }
@@ -133,8 +130,8 @@ p {
   100% {width:12.5%;}
 }
 @keyframes fadeout {
-  0% {opacity:1;background:#26A69A;}
-  50% {background:#4DB6AC;} /* Fade lighter: #00897B */
+  0% {opacity:1;background:#329CC9;}
+  50% {background:#329CC9;} /* Fade lighter: #00897B */
   99% {height:100%;width:100%;opacity:0;}
   100% {height:0;width:0;opacity:0;} 
 }
@@ -144,11 +141,11 @@ p {
 }
 @keyframes ellipsis {
   0%   {color: transparent; text-shadow: none;}
-  1%   {color: #333; text-shadow: .5em 0 0 transparent, 1em 0 0 transparent;}
-  26%  {color: black; text-shadow: .5em 0 0 transparent, 1em 0 0 transparent;}
-  51%  {color: black; text-shadow: .5em 0 0 black, 1em 0 0 transparent;}
-  76%  {color: black; text-shadow: .5em 0 0 black, 1em 0 0 black;}
-  100% {color: black; text-shadow: .5em 0 0 black, 1em 0 0 black;}
+  1%   {color: snow; text-shadow: .5em 0 0 transparent, 1em 0 0 transparent;}
+  26%  {color: snow; text-shadow: .5em 0 0 transparent, 1em 0 0 transparent;}
+  51%  {color: snow; text-shadow: .5em 0 0 snow, 1em 0 0 transparent;}
+  76%  {color: snow; text-shadow: .5em 0 0 snow, 1em 0 0 snow;}
+  100% {color: snow; text-shadow: .5em 0 0 snow, 1em 0 0 snow;}
 }
 
 /* Borders */
@@ -228,7 +225,7 @@ p {
 }
 
 
-.company-header-avatar{
+.header-avatar{
   width: 260px;
   height: 260px;
   -webkit-border-radius: 260px;
