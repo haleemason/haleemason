@@ -12,43 +12,43 @@ body, html {
 
 /* layout made by
   Andrew Tunnecliffe - 2014
-*/
+  */
 
 
-.loading {
-  position:absolute;
-  height:100%;
-  width:100%;
-  background:#329CC9;
-  z-index:11;
-  animation:fadeout 0.5s forwards 1s;
-}
-.item {
-  float:left;
-  overflow:hidden;
-  position:absolute;
-}
-.inner {
-  margin: auto;
-  height:90%;
-  width:90%;
-  cursor:pointer;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  opacity:0;
-  animation:fadein 0.5s forwards 2s;
-  text-align: center;
-}
-.loading > .inner {
-  opacity:1;
-}
-.loading > .inner > .ellipsis::after{
- content: '.';
- font-size: 1em;
- color: transparent;
- animation: ellipsis .75s steps(3) 5;
-}
-.loading > .inner > .ellipsis{
+  .loading {
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:#329CC9;
+    z-index:11;
+    animation:fadeout 0.5s forwards 1s;
+  }
+  .item {
+    float:left;
+    overflow:hidden;
+    position:absolute;
+  }
+  .inner {
+    margin: auto;
+    height:90%;
+    width:90%;
+    cursor:pointer;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    opacity:0;
+    animation:fadein 0.5s forwards 2s;
+    text-align: center;
+  }
+  .loading > .inner {
+    opacity:1;
+  }
+  .loading > .inner > .ellipsis::after{
+   content: '.';
+   font-size: 1em;
+   color: transparent;
+   animation: ellipsis .75s steps(3) 5;
+ }
+ .loading > .inner > .ellipsis{
   position: absolute;
   top:50%;
 }
@@ -57,6 +57,7 @@ body, html {
   margin:0; 
   width:100%;
   text-align:center;
+  font-weight: normal;
 }
 .border { 
   background:#333;

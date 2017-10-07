@@ -16,23 +16,66 @@
 .label {
   color: white;
   text-shadow: 0px 0px 2px #cfd6dd;
-  font-size: 24px;
+  font-size: 18px;
+  margin-top:5px;
 }
 
 .fill-1 {
-  animation: fill-1 0.5s ease-out 0s;
+  animation: fill-1 0.5s ease-out 2s;
   animation-fill-mode: forwards;
   width: 0%;
 }
 
 .fill-2 {
-  animation: fill-2 0.5s ease-out 0.5s;
+  animation: fill-2 0.5s ease-out 2.1s;
   animation-fill-mode: forwards;
   width: 0%;
 }
 
 .fill-3 {
-  animation: fill-3 0.5s ease-out 1s;
+  animation: fill-3 0.5s ease-out 2.2s;
+  animation-fill-mode: forwards;
+  width: 0%;
+}
+
+.fill-4 {
+  animation: fill-4 0.5s ease-out 2.3s;
+  animation-fill-mode: forwards;
+  width: 0%;
+}
+
+.fill-5 {
+  animation: fill-5 0.5s ease-out 2.4s;
+  animation-fill-mode: forwards;
+  width: 0%;
+}
+
+.fill-6 {
+  animation: fill-6 0.5s ease-out 2.5s;
+  animation-fill-mode: forwards;
+  width: 0%;
+}
+
+.fill-7 {
+  animation: fill-7 0.5s ease-out 2.6s;
+  animation-fill-mode: forwards;
+  width: 0%;
+}
+
+.fill-8 {
+  animation: fill-8 0.5s ease-out 2.7s;
+  animation-fill-mode: forwards;
+  width: 0%;
+}
+
+.fill-9 {
+  animation: fill-9 0.5s ease-out 2.8s;
+  animation-fill-mode: forwards;
+  width: 0%;
+}
+
+.fill-10 {
+  animation: fill-10 0.5s ease-out 2.9s;
   animation-fill-mode: forwards;
   width: 0%;
 }
@@ -42,7 +85,7 @@
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 98%;
   }
 }
 @keyframes fill-2 {
@@ -50,7 +93,7 @@
     width: 0%;
   }
   100% {
-    width: 40%;
+    width: 93%;
   }
 }
 @keyframes fill-3 {
@@ -58,9 +101,72 @@
     width: 0%;
   }
   100% {
+    width: 96%;
+  }
+}
+
+@keyframes fill-4 {
+  0% {
+    width: 0%;
+  }
+  100% {
     width: 90%;
   }
 }
+@keyframes fill-5 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes fill-6 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes fill-7 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes fill-8 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes fill-9 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes fill-10 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+
+
+
 .label.one {
   animation: label 0.5s ease-out 0s;
   animation-fill-mode: forwards;
