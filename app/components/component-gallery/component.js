@@ -4,12 +4,26 @@ export default Ember.Component.extend({
 
 	didRender(){
 
+		const panels = document.querySelectorAll('.panel');
 
+		function toggleOpen() {
+			this.classList.toggle('open');
+		}
+
+		function toggleActive(e) {
+			console.log(e.propertyName);
+			if(e.propertyName.includes('flex')) {
+				this.classList.toggle('open-active'); 
+			}
+		}
+
+		panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+		panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
 
 		// $(document).ready(function(){
 		// 	$('.entry').hover(function(){
 		// 		var li = $('li', this);
-				
+		
 		// 		for(var i = 0; i < $(li).length; i++){
 		// 			$($(li)[i]).stop().animate({
 		// 				'height':'18px'
@@ -20,8 +34,8 @@ export default Ember.Component.extend({
 		// 			'height':'5px'
 		// 		}, 250);
 		// 	});
-			
-			
+		
+		
 		// });
 		// ! function ($) {
 		// 	var defaults = {

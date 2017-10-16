@@ -1,6 +1,6 @@
 .progress-bar {
   height: 3px;
-  width: 100%;
+ width: 100%;
   position: relative;
   z-index: 10;
   background-color: #55708d;
@@ -206,13 +206,13 @@ html, body {
 body {
   padding: 60px 20px;
 }
-body .wrapper {
-  max-width: 600px;
+body .skills-wrapper {
+  /*max-width: 600px;*/
   margin: 0 auto;
 }
-body .wrapper .container {
+body .skills-wrapper .container {
   padding: 20px;
 }
-body .wrapper .container > * {
+body .skills-wrapper .container > * {
   margin-bottom: 10px;
 }
