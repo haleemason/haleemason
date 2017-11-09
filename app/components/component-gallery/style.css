@@ -1,0 +1,44 @@
+
+.project {
+	color: #E6E9ED;
+	position: relative;
+	margin: 0;
+	white-space: nowrap;
+}
+
+.word {
+	color: #3BAFDA;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.project:after{
+	font-family: arial;
+	content:'/>';
+	color: #3BAFDA;
+	font-size: calc(2px + 1.8vw);
+}
+.project:before{
+	font-family: arial;
+	content:'<';
+	color: #3BAFDA;
+	font-size: calc(2px + 1.8vw);
+}
+
+.small{
+	font-size: 12px;
+}
+
+hr.style5 {
+	border: none;
+	border-top: 2px dashed snow;
+	width:10px;
+}
+
+a {
+	color:white;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}

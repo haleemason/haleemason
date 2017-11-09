@@ -1,5 +1,98 @@
-{{nav-menu}}
+<div class='flex-wrapper'>
+	<div class="loading">
+		<div class="inner"><h1 class="ellipsis"></h1></div> 
+	</div>
 
+
+	<div class='wrapper'>
+		<div class="item">
+			{{#liquid-if toggleResume use='toUp'}}
+
+				<div class="inner">
+
+					<img class="header-avatar" style="background-image: url('../img/me.JPG')">
+
+					<h1>Ryan Mason</h1>
+					<p>Im ryan and i do tech stuff with computers take a look how awesome this site looks its different from most site that you would see  because im different what. im different </p>
+
+					{{social-media}}
+
+					<br />
+					<br />
+
+					{{button-regular toggleResume=toggleResume text="Resume"}}
+					{{arrow-down}}
+
+				</div>
+				{{/liquid-if }}
+
+				{{#liquid-unless toggleResume  use="toUp"}}
+					<iframe src="resume/Resume.pdf" width="100%" height="100vh" frameborder="0" id="iframe-resume">
+				
+					</iframe>
+					<p class="text-absolute">It looks like your on mobile, <a href="resume/Resume.pdf" target="_blank"> click here to view</a></p>
+					{{button-regular toggleResume=toggleResume class="btn-absolute" text=" < Back"}}
+				{{/liquid-unless }}
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+		</div> 
+	</div>
+	<div class='wrapper'>
+		<div class="item" style="display: none"></div>
+		<div class="item">
+			<div class="inner"><h1>Projects</h1>
+
+
+				{{component-gallery}}
+
+			</div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+		</div>
+
+		<div class="item">
+			<div class="inner"><h1>Skills</h1>
+
+				{{skill-bars}}
+
+			</div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+		</div> 
+
+		<div class="item">
+			<div class="inner"><h1>Blog</h1></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+		</div>
+
+		<div class="item">
+			<div class="inner">
+				<h1>Contact</h1>
+				<div class='text-center email'>ryanmasonjar@gmail.com</div>
+
+				<a class="svg-link" href="mailto:ryanmasonjar@gmail.com">
+					<div  class="letter" ></div>
+				</a>
+
+
+
+			</div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+		</div>
+	</div>
+</div>
 {{outlet}}
 
 
