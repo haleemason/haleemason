@@ -2,3 +2,13 @@
 svg{
   fill:snow;
 }
+.svg-link {
+    text-decoration: none;
+}
+
+.svg-link:hover svg{
+    fill:#dbdbdb;
+}
+
+.svg-link:hover {
+}

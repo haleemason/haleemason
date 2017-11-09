@@ -1,9 +1,9 @@
 
 .project {
 	color: #E6E9ED;
-	/*font-size: 40px;*/
 	position: relative;
 	margin: 0;
+	white-space: nowrap;
 }
 
 .word {
@@ -16,13 +16,13 @@
 	font-family: arial;
 	content:'/>';
 	color: #3BAFDA;
-	font-size: 28px;
+	font-size: calc(2px + 1.8vw);
 }
 .project:before{
 	font-family: arial;
 	content:'<';
 	color: #3BAFDA;
-	font-size: 28px;
+	font-size: calc(2px + 1.8vw);
 }
 
 .small{
