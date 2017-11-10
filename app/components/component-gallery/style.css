@@ -12,17 +12,18 @@
 	overflow: hidden;
 }
 
-.project:after{
+.brackets:after{
 	font-family: arial;
-	content:'/>';
+	content:' />';
 	color: #3BAFDA;
-	font-size: calc(2px + 1.8vw);
+	font-size: calc(1px + 1.6vw);
+
 }
-.project:before{
+ .brackets:before{
 	font-family: arial;
-	content:'<';
+	content:'< ';
 	color: #3BAFDA;
-	font-size: calc(2px + 1.8vw);
+	font-size: calc(1px + 1.6vw);
 }
 
 .small{
