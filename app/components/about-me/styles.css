@@ -1,0 +1,14 @@
+.about-me {
+	background-image: url("https://image.ibb.co/bDsexR/handsome_guy_standing_near_brick_wall_city_style_full_growth_shot_young_man_front_looking_down_77094634.jpg");
+	background-size: cover;
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+	width:100%;
+  	min-height:690px;
+}
+
+/*.about-me-fixed-spacer {
+	width:45%;
+  	min-height: calc(100vh - 75px);
+  	background: red;
+}*/

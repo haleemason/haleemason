@@ -1,0 +1,46 @@
+.full-width-info {
+	min-height:50px;
+	padding: 10px 50px;
+}
+
+.blue {
+	background: #5c9cec;
+	color:#e6e9ee;
+}
+
+.gray {
+	background: #e6e9ee;
+	color:#3c474f;
+
+}
+
+.purple {
+	background: #ac92ec;
+	color:#e6e9ee;
+}
+
+.orange {
+	background: #ffce53;
+	color:#e6e9ee;
+
+}
+
+.dark-gray {
+	background: #646d78;
+	color:#e6e9ee;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  margin: auto;
+  border-left: 170px solid transparent;
+  border-right: 170px solid transparent;
+  border-top: 100px solid #5c9cec;
+}
+
+.important-text {
+	font-size: 100px;
+	white-space: nowrap;
+}
+

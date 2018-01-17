@@ -1,0 +1,116 @@
+@import "pod-styles.css";
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body {
+	margin:0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+	color:#3c474f;
+}
+
+/* Works in all browsers, does not effect other views within your application */
+body > .ember-view {
+	height: 100%;
+}
+
+.bar-code-text {
+	font-family: 'Libre Barcode 39 Extended Text', cursive;
+}
+
+.spacer{
+	height:75px;
+	width:100%;
+}
+
+
+.flex-grid {
+	display: flex;
+}
+.col {
+	flex: 1;
+}
+.col-sml {
+	flex: .70;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 34px;
+	margin:0;
+}
+
+h3 {
+	font-size: 80px;
+	margin-bottom: 5px;
+}
+h4 {
+	font-weight: normal;
+	font-size: 28px;
+	margin:0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.slant {
+	-webkit-transform: rotate(5deg) skew(5deg, 0);
+	-moz-transform: rotate(5deg) skew(5deg, 0);
+	-ms-transform: rotate(5deg) skew(5deg, 0);
+	-o-transform: rotate(5deg) skew(5deg, 0);
+	transform: rotate(5deg) skew(5deg, 0);
+	margin: 0px 0px;
+}
+
+
+.blue-background {
+	background: #5c9cec;
+}
+
+.orange-background {
+	background: #ffce53;
+}
+
+.purple-background { 
+	background: #ac92ec;
+}
+
+.gray-background {
+	background: #e6e9ee;
+}
+
+.circle-div {
+	border-radius: 100px;
+	margin:10px;
+}
+.bar {
+	background: #5c9cec;
+	margin:0 auto;
+	border:none;
+}
+
+.btn-outline {
+	margin:20px;
+	color:#e6e9ee;
+	font-size: 24px;
+	text-transform: uppercase;
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border-width: 2px;
+    border-color:#e6e9ee;
+    padding:10px 25px;
+}
+
+a {
+	color:snow;
+}
+
+a:hover {
+	color:#5c9cec;
+}
