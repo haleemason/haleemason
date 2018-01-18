@@ -1,34 +1,8 @@
 .full-width-info {
 	min-height:50px;
-	padding: 10px 50px;
+	padding: 50px;
 }
 
-.blue {
-	background: #5c9cec;
-	color:#e6e9ee;
-}
-
-.gray {
-	background: #e6e9ee;
-	color:#3c474f;
-
-}
-
-.purple {
-	background: #ac92ec;
-	color:#e6e9ee;
-}
-
-.orange {
-	background: #ffce53;
-	color:#e6e9ee;
-
-}
-
-.dark-gray {
-	background: #646d78;
-	color:#e6e9ee;
-}
 
 .arrow-down {
   width: 0; 
@@ -39,8 +13,140 @@
   border-top: 100px solid #5c9cec;
 }
 
+.important-holder{
+  position: relative;
+  width: 560px;
+  margin: auto;
+}
 .important-text {
 	font-size: 100px;
 	white-space: nowrap;
 }
 
+.sub-text-left{
+  text-transform: uppercase;
+  position:absolute;
+  top: 100px;
+  left:75px;
+  color: #5a9cec;
+
+}
+
+.sub-text-right{
+ text-transform: uppercase;
+ position: absolute;
+ top: 100px;
+ left: 390px;
+ color: #5a9cec;
+
+}
+
+.time-frame {
+  margin: 0;
+}
+
+.website-images {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content:center;
+  align-items: center;
+  display: flex;
+}
+
+.website-image{
+  width:280px;
+  height:175px;
+  border-radius: 3px;
+  box-shadow:0px 2px 40px 0px #4c4c4c;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+}
+.website-title {
+  text-align: center;
+  font-size: 24px;
+  -webkit-box-align:center;
+  -webkit-box-pack:center;
+  display:-webkit-box;
+  margin-bottom: 6px;
+}
+
+.website-holder {
+  margin:20px;
+}
+
+.website-image:hover{
+  box-shadow:0px 2px 40px 0px #afadad;
+
+}
+
+
+/*Add any website images here*/
+.image-one {
+  background: url('https://image.ibb.co/g3x8cR/Screen_Shot_2018_01_17_at_11_23_07_PM.png') no-repeat center;
+  background-size: 280px 175px;
+
+}
+.image-two {
+  background: url('https://image.ibb.co/hF89j6/Screen_Shot_2018_01_17_at_11_36_54_PM.png') no-repeat center;
+  background-size: 280px 175px;
+}
+.image-three {
+  background: url('https://image.ibb.co/gtSGxR/Screen_Shot_2018_01_17_at_11_45_47_PM.png') no-repeat center;
+  background-size: 280px 175px;
+}
+
+.image-four {
+  background: url('https://image.ibb.co/hkwjHR/Screen_Shot_2018_01_18_at_12_14_07_AM.png') no-repeat center;
+  background-size: 280px 175px;
+}
+.image-five {
+  background: url('https://image.ibb.co/kwWZHR/Screen_Shot_2018_01_18_at_12_14_55_AM.png') no-repeat center;
+  background-size: 280px 175px;
+}
+.image-six {
+  background: url('https://image.ibb.co/kSr1xR/Screen_Shot_2018_01_18_at_12_15_04_AM.png') no-repeat center;
+  background-size: 280px 175px;
+}
+.image-seven {
+  background: url('https://image.ibb.co/cDFGWm/Screen_Shot_2018_01_18_at_12_15_11_AM.png') no-repeat center;
+  background-size: 280px 175px;
+}
+.image-eight {
+  background: url('https://image.ibb.co/ckrZHR/Screen_Shot_2018_01_18_at_12_15_29_AM.png') no-repeat center;
+  background-size: 280px 175px;
+}
+.image-nine {
+  background: url('https://image.ibb.co/feiaP6/Screen_Shot_2018_01_18_at_12_15_37_AM.png') no-repeat center;
+  background-size: 280px 175px;
+}
+
+.image-ten {
+  background: url('https://image.ibb.co/c7GbxR/Screen_Shot_2018_01_18_at_12.png') no-repeat center;
+  background-size: 280px 175px;
+}
+.image-eleven {
+  background: url('https://image.ibb.co/kPWqrm/Screen_Shot_2018_01_18_at_121.png') no-repeat center;
+  background-size: 280px 175px;
+}
+.image-twelve {
+  background: url('https://image.ibb.co/gqOj1m/Screen_Shot_2018_01_18_at_1214.png') no-repeat center;
+  background-size: 280px 175px;
+}
+
+.image-thirteen {
+  background: url('https://image.ibb.co/cetOu6/Screen_Shot_2018_01_18_at_1213.png') no-repeat center;
+  background-size: 280px 175px;
+}
+
+.image-fourteen {
+  background: url('https://image.ibb.co/mUxYu6/Screen_Shot_2018_01_18_at_1215.png') no-repeat center;
+  background-size: 280px 175px;
+}
+
+.image-fifteen {
+  background: url('https://image.ibb.co/nuJDcR/Screen_Shot_2018_01_18_at_10_16_00_AM.png') no-repeat center;
+  background-size: 280px 175px;
+}
+/****/
