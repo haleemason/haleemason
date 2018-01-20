@@ -63,6 +63,17 @@ h4 {
 	transform: translateY(-50%);
 }
 
+.margin-auto {
+	margin: 10px auto;
+}
+
+.clickable {
+	cursor:pointer;
+}
+
+.inline-block {
+	display:inline-block;
+}
 .slant {
 	-webkit-transform: rotate(5deg) skew(5deg, 0);
 	-moz-transform: rotate(5deg) skew(5deg, 0);
@@ -112,6 +123,7 @@ h4 {
 	border-width: 2px;
 	border-color:#e6e9ee;
 	padding:10px 25px;
+	border: solid #e6e9ee;
 }
 
 a {

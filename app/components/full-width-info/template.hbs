@@ -24,160 +24,148 @@
 
 {{info-block}}
 
-<!-- <div class="blue-background gray-background">
-	<div class="full-width-info blue slant">
-		<h2>content</h2>
-	</div>
-</div> -->
-<!-- <div class="full-width-info gray text-center flex-grid" >
-	<br>
-	<br>
-	<br>
-	<div class="col">dvskjvkm</div>
-	{{word-cloud}}
-	<br>
-	<br>
-	<br>
-</div> -->
 
 <div class="full-width-info dark-gray" >
+
+
 	<h2 class="text-center">&#60; Some Projects &#47;&#62;</h2>
 
 	<hr class="color">
-	<div class="flex-grid">
-		<div class="col"> 
-			<div class="website-images">
-				<div class="website-image image-one">
-				</div>
-				<div class="website-image image-two">
-				</div>
-				<div class="website-image image-three">
-				</div>
+	{{#each websiteJSON as |website index|}}
+		<div class="flex-grid">
+			<div class="col">
+				<p class="large-paragraph text-center center-content">
+					<span class="website-title">{{website.websiteTitle}}</span>
+					{{website.websiteDescription}}
+					<div class="margin-auto" >
+						{{#if website.git}}
+							<a href="{{website.git}}" class="inline-block github" target=" _blank"></a>
+						{{/if}}
+						{{#if website.url}}
+							<a href="{{website.url}}" class="inline-block www" target="_blank"></a>
+						{{/if}}
+					</div>
+					</p>
 			</div>
-		</div>
-		<div class="col">
-			<p class="large-paragraph text-center center-content">
-				<span class="website-title">OSFPages</span>
-				OSF Pages is an Open Science Framework (OSF) addon and website builder that helps OSF users build beautiful websites very quickly using their existing project details. OSF Pages doesn't need additional hosting or management and it's free and open source.
-			</p>
-		</div>
-	</div>
-	<br>
-	<hr class="color">
-	<br>
-	<div class="flex-grid">
-		<div class="col">
-			<p class="large-paragraph text-center center-content">
-				<span class="website-title">OSFCollections</span>
-				Collections is a prototype project at the Center for Open Science. This project is experimental, scope, technologies, This app has two main parts. The service stores data about the collection, and the client lets users interact with their collections.
-			</p>
-		</div>
-		<div class="col"> 
-			<div class="website-images">
-				<div class="website-image image-four">
-				</div>
-				<div class="website-image image-five">
-				</div>
-				<div class="website-image image-six">
-				</div>
-				<div class="website-image image-seven">
-				</div>
-			<!-- 	<div class="website-image image-eight">
-				</div>
-				<div class="website-image image-nine">
-				</div> -->
-			</div>
-		</div>
-	</div>
-	<br>
-	<hr class="color">
-	<br>
-	<div class="flex-grid">
-		<div class="col"> 
-			<div class="website-images">
-				<div class="website-image image-fifteen">
-				</div>
-			</div>
-		</div>
-		<div class="col">
-			<p class="large-paragraph text-center center-content">
-				<span class="website-title">Overturned Salt</span>
-				Overturned Salt is a food blog that was a clients request to build a website with the ability to post, edit, delete, moderate and comment.
-			</p>
-		</div>
-	</div>
-	<br>
-	<hr class="color">
-	<br>
-	<div class="flex-grid">
-		<div class="col">
-			<p class="large-paragraph text-center center-content">
-				<span class="website-title">The Course Assessment Tool</span>
-				The Course Assessment Tool was my senior development project at Rochester Institute of Technology(RIT) were my team and myself developed a system that handled assessment of courses at RIT allowing administration to set up classes and have faculty enter the grades from that semester to be able to generate reports and statics for the year.
-			</p>
-		</div>
-		<div class="col"> 
-			<div class="website-images">
-				<!-- <div class="website-image image-ten">
-				</div> -->
-				<div class="website-image image-eleven">
-				</div>
-				<div class="website-image image-twelve">
-				</div>
-				<div class="website-image image-thirteen">
-				</div>
-				<div class="website-image image-fourteen">
-				</div>
-			</div>
-		</div>
-	</div>
+			<div class="col" style="text-align: center;"> 
+				<div class="website-images">
 
-	<hr class="color">
+
+					{{#each website.websiteURL as |url indexURL|}}
+
+						{{#if (eq indexURL 0) }}
+							<input type="radio" id="website-{{indexURL}}" name="contact{{index}}" value="website" class="website-radio" checked>
+						{{else}}
+							<input type="radio" id="website-{{indexURL}}" name="contact{{index}}" value="website" class="website-radio">
+						{{/if}}
+									    
+				    {{/each}}
+
+				 	{{#each website.websiteURL as |url indexURL|}}
+   					    <div 
+					    	for="website-{{indexURL}}" 
+					    	class="website-image" 
+					    	id="website-image-{{indexURL}}" 
+					    	style="background: url({{url}}) no-repeat center;background-size: 560px 350px"
+					    ></div>
+					{{/each}}
+		
+				</div>
+			</div>
+		</div>
+		<br>
+		<hr class="color">
+		<br>
+	{{/each}}
+	
+	<style>
+    {{#each websiteJSON as |website index|}}
+
+		{{#each website.websiteURL as |url indexURL|}}
+			#website-image-{{indexURL}}  {
+				display:none;
+
+			}
+			#website-{{indexURL}}:checked ~ #website-image-{{indexURL}}  {
+				display:block;
+			}
+
+
+		{{/each}}
+
+    {{/each}}
+
+	</style>
+
 
 </div>
 
 
 
-<div class="full-width-info purple text-center" >
+<div class="full-width-info purple text-center " >
 	<h2 class="text-center">&#60; Hobbies &#47;&#62;</h2>
-		<div class="col"> Soccer, Networking, Coding & Scripting, Traveling, Server Management, Photography, Networking
+	<div class="flex-grid hobbies">
+		<div class="col">Server Management
+			<div class="hobbie-icons server"></div>
 		</div>
-	<p class="large-paragraph"></p>
+		<div class="col">Networking
+			<div class="hobbie-icons networking"></div>
+		</div>
+		
+		<div class="col">Traveling
+			<div class="hobbie-icons traveling"></div>
+		</div>
+		<div class="col">Coding & Scripting
+			<div class="hobbie-icons coding"></div>
+		</div>
+	</div>
+	<div class="flex-grid hobbies">
+		
+		<div class="col"> Soccer
+			<div class="hobbie-icons soccerBall"></div>
+		</div>
+		<div class="col">Video Editing
+			<div class="hobbie-icons videoEditing"></div>
+		</div>
+
+	</div>
 </div>
 
 
 
 <div class="full-width-info gray">
-
-	<h2 class="text-center">Rochester Institute Of Technology</h2>
-	<p class="text-center time-frame">2013-2017</p>
-	<p class="large-paragraph text-center">Received my BS in Information Technology with an immersion in web and mobile design with a concentration in communications.</p>
-
-
-	<h2 class="text-center">Assistant System Administrator</h2>
-	<p class="text-center time-frame">2015-2016</p>
+	<h2 class="text-center">Freelance Software Engineer</h2>
+	<p class="text-center time-frame">2018 - Current</p>
 	<p class="large-paragraph text-center">
-		Worked at the College of science providing technical support for faculty and staff at Rochester Institute Of Technology. Performed backup, restore, upgrades, and software installations for mac and windows computers.
-	</p>
-	<h2 class="text-center">Lab Technician</h2>
-	<p class="text-center time-frame">2016-2016</p>
-	<p class="large-paragraph text-center">
-		Worked at the College of Imaging Arts and Sciences providing technical support, maintaining, fixing, upgrading computers, and providing end user support for computer labs on the Rochester institute of technology campus.
-	</p>
-
-	<h2 class="text-center">Developer Intern</h2>
-	<p class="text-center time-frame">2016-2017</p>
-	<p class="large-paragraph text-center">
-		Worked at the Center for Open Science on developing web applications, collaborating with teams of developers, working with Ember.js, and Django REST api frameworks.  
+		Working with 221b.io to build ....
 	</p>
 
 	<h2 class="text-center">Junior Software Engineer</h2>
-	<p class="text-center time-frame">2016-Current</p>
+	<p class="text-center time-frame">2017 - 2018</p>
 	<p class="large-paragraph text-center">
-		Working at the Center for open Science on the L.A.B.S team using rapid incremental prototyping to create prototypes. 
-
+		Working at the Center for Open Science on the Labs team using rapid incremental prototyping to create experimental products. 
 	</p>
 
+	<h2 class="text-center">Developer Intern</h2>
+	<p class="text-center time-frame">2016 - 2017</p>
+	<p class="large-paragraph text-center">
+		Worked at the Center for Open Science on developing web applications, collaborating with teams of developers, working with Ember.js, and Django REST API frameworks.  
+	</p>
+
+	<h2 class="text-center">Lab Technician</h2>
+	<p class="text-center time-frame">2016 - 2016</p>
+	<p class="large-paragraph text-center">
+		Worked at the College of Imaging Arts and Sciences providing technical support, maintaining, fixing, upgrading computers, and providing end user support for computer labs on the Rochester Institute of Technology campus.
+	</p>
+
+	<h2 class="text-center">Assistant System Administrator</h2>
+	<p class="text-center time-frame">2015 - 2016</p>
+	<p class="large-paragraph text-center">
+		Worked at the College of Science providing technical support for faculty and staff at Rochester Institute of Technology. Performed backup, restore, upgrades, and software installations for Mac and Windows computers.
+	</p>
+	<h2 class="text-center">Rochester Institute Of Technology</h2>
+	<p class="text-center time-frame">2013 - 2017</p>
+	<p class="large-paragraph text-center">Received my BS in Information Technology with an immersion in web and mobile design with a concentration in communications.</p>
 </div>
 
 <!-- <div class="full-width-info gray" >
@@ -187,7 +175,7 @@
 <div class="full-width-info blue text-center " >
 	<h3>Let’s get to work.</h3>
 	<h4>Want to get in touch with me?</h4>
-	<button class="btn-outline">Contact Me</button>
+		<button class="btn-outline"  {{action 'toggleEmail'}}>{{{email}}}</button>
 	<br>
 	<br>
 	<br>
@@ -195,7 +183,30 @@
 
 
 
-<div class="full-width-info dark-gray" >
+<div class="full-width-info dark-gray footer" >
 	<br>
-	<div class="text-center">Icons by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+	Ryan Mason 2017 - <a href {{action 'toggleLicense'}}>license</a>
+	{{#if showLicense}}
+		<div>Icons by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+		<div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+		<div>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+		<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+		<div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+		<div>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+		<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+		<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+		<div>Icons made by <a href="https://www.flaticon.com/authors/lucy-g" title="Lucy G">Lucy G</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+		<div>Icons made by <a href="https://www.flaticon.com/authors/zurb" title="Zurb">Zurb</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+		<div>Icons made by <a href="https://www.flaticon.com/authors/alfredo-hernandez" title="Alfredo Hernandez">Alfredo Hernandez</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+	{{/if}}
 </div>

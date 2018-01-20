@@ -46,22 +46,22 @@
 }
 
 .website-images {
-  flex-wrap: wrap;
+/*  flex-wrap: wrap;
   align-items: flex-start;
   justify-content:center;
   align-items: center;
-  display: flex;
+  display: flex;*/
 }
 
 .website-image{
-  width:280px;
-  height:175px;
+  width: 560px;
+  height: 350px;
   border-radius: 3px;
   box-shadow:0px 2px 40px 0px #4c4c4c;
   transition: box-shadow 0.3s ease-in-out;
   cursor: pointer;
-  display: inline-block;
-  margin: 10px;
+  margin: 10px auto;
+  text-align: center;
 }
 .website-title {
   text-align: center;
@@ -75,78 +75,95 @@
 .website-holder {
   margin:20px;
 }
-
-.website-image:hover{
-  box-shadow:0px 2px 40px 0px #afadad;
-
+input[type=radio]{
+  visibility: hidden;
+}
+ input[type=radio]:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    top:385px;
+    background-color: #3c474f;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    cursor: pointer;
+    border: 2px solid transparent;
 }
 
 
-/*Add any website images here*/
-.image-one {
-  background: url('https://image.ibb.co/g3x8cR/Screen_Shot_2018_01_17_at_11_23_07_PM.png') no-repeat center;
-  background-size: 280px 175px;
 
-}
-.image-two {
-  background: url('https://image.ibb.co/hF89j6/Screen_Shot_2018_01_17_at_11_36_54_PM.png') no-repeat center;
-  background-size: 280px 175px;
-}
-.image-three {
-  background: url('https://image.ibb.co/gtSGxR/Screen_Shot_2018_01_17_at_11_45_47_PM.png') no-repeat center;
-  background-size: 280px 175px;
+
+
+input[type='radio']:checked:after {
+    border: 2px solid #e6e9ee;
 }
 
-.image-four {
-  background: url('https://image.ibb.co/hkwjHR/Screen_Shot_2018_01_18_at_12_14_07_AM.png') no-repeat center;
-  background-size: 280px 175px;
-}
-.image-five {
-  background: url('https://image.ibb.co/kwWZHR/Screen_Shot_2018_01_18_at_12_14_55_AM.png') no-repeat center;
-  background-size: 280px 175px;
-}
-.image-six {
-  background: url('https://image.ibb.co/kSr1xR/Screen_Shot_2018_01_18_at_12_15_04_AM.png') no-repeat center;
-  background-size: 280px 175px;
-}
-.image-seven {
-  background: url('https://image.ibb.co/cDFGWm/Screen_Shot_2018_01_18_at_12_15_11_AM.png') no-repeat center;
-  background-size: 280px 175px;
-}
-.image-eight {
-  background: url('https://image.ibb.co/ckrZHR/Screen_Shot_2018_01_18_at_12_15_29_AM.png') no-repeat center;
-  background-size: 280px 175px;
-}
-.image-nine {
-  background: url('https://image.ibb.co/feiaP6/Screen_Shot_2018_01_18_at_12_15_37_AM.png') no-repeat center;
-  background-size: 280px 175px;
+.hobbies {
+  width:752px;
+  font-size: 21px;
+  margin:auto;
+  margin-top:25px; 
 }
 
-.image-ten {
-  background: url('https://image.ibb.co/c7GbxR/Screen_Shot_2018_01_18_at_12.png') no-repeat center;
-  background-size: 280px 175px;
-}
-.image-eleven {
-  background: url('https://image.ibb.co/kPWqrm/Screen_Shot_2018_01_18_at_121.png') no-repeat center;
-  background-size: 280px 175px;
-}
-.image-twelve {
-  background: url('https://image.ibb.co/gqOj1m/Screen_Shot_2018_01_18_at_1214.png') no-repeat center;
-  background-size: 280px 175px;
+.hobbie-icons {
+  width:32px;
+  height: 32px;
+  margin: auto;
+ } 
+.soccerBall {
+  background-image: url("https://image.ibb.co/ktxMzG/football_ball_1.png");
+  background-size:32px 32px;
+
 }
 
-.image-thirteen {
-  background: url('https://image.ibb.co/cetOu6/Screen_Shot_2018_01_18_at_1213.png') no-repeat center;
-  background-size: 280px 175px;
+.networking {
+  background-image: url("https://image.ibb.co/ioaftb/teamwork_1.png");
+  background-size:32px 32px;
 }
 
-.image-fourteen {
-  background: url('https://image.ibb.co/mUxYu6/Screen_Shot_2018_01_18_at_1215.png') no-repeat center;
-  background-size: 280px 175px;
+.coding {
+  background-image: url("https://image.ibb.co/kMzJeG/code_1.png");
+  background-size:32px 32px;
 }
 
-.image-fifteen {
-  background: url('https://image.ibb.co/nuJDcR/Screen_Shot_2018_01_18_at_10_16_00_AM.png') no-repeat center;
-  background-size: 280px 175px;
+.traveling {
+  background-image: url("https://image.ibb.co/fCQPKG/location_on_road_1.png");
+  background-size:32px 32px;
 }
-/****/
+
+.server {
+  background-image: url("https://image.ibb.co/g5yBzG/server_1.png");
+  background-size:32px 32px;
+}
+
+.videoEditing {
+  background-image: url("https://image.ibb.co/jcSoeG/video.png");
+  background-size:32px 32px;
+}
+
+.github {
+   background-image: url("https://image.ibb.co/mGY8Ww/github_social_logo.png");
+   background-size:24px 24px;
+   width:24px;
+   height: 24px;
+}
+
+.www {
+   background-image: url("https://image.ibb.co/i03NPG/internet.png");
+   background-size:24px 24px;
+   width:24px;
+   height: 24px;
+}
+
+.footer {
+  text-align: right;
+}
+
+.footer:hover {
+  /*height:100%;*/
+}
+
