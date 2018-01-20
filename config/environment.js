@@ -45,6 +45,10 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.locationType = 'hash';
     ENV.rootURL = '/ryanmason/';
+    ENV.locationType = 'hash';
+    ENV.rootURL = '/ryanmason/';
+    ENV.locationType = 'hash';
+    ENV.rootURL = '/ryanmason/';
 
   }
 
