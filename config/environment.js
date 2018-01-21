@@ -49,6 +49,8 @@ module.exports = function(environment) {
     ENV.rootURL = '/ryanmason/';
     ENV.locationType = 'hash';
     ENV.rootURL = '/ryanmason/';
+    ENV.locationType = 'hash';
+    ENV.rootURL = '/ryanmason/';
 
   }
 
