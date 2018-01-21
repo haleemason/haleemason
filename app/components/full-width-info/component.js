@@ -60,6 +60,7 @@ export default Ember.Component.extend({
 			this.toggleProperty('showEmail');
 			if(this.get('showEmail')){
 				this.set('email', "<input style='border: solid transparent;font-size: 16px;padding: 8px; background:#5c9cec;color: #e6e9ee;' value='ryanmasonjar@gmail.com'></input>")
+            window.location.href = "mailto:ryanmasonjar@gmail.com";
 			}
 		}
 	}
