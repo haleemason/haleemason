@@ -11,7 +11,8 @@ body {
 	font-family: 'Roboto', sans-serif;
 	color:#3c474f;
 	background: snow;
-}
+	zoom:120%;
+	}
 
 /* Works in all browsers, does not effect other views within your application */
 body > .ember-view {
