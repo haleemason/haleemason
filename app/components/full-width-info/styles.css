@@ -44,6 +44,9 @@
   margin: 0;
 }
 
+.small-text {
+  font-size: 10px;
+}
 .website-images {
 /*  flex-wrap: wrap;
   align-items: flex-start;
@@ -129,6 +132,10 @@ input[type='radio']:checked:after {
   background-size:32px 32px;
 }
 
+.scubaDiving {
+  background-image: url("  https://image.ibb.co/mTR8ib/diver.png");
+  background-size:32px 32px;
+}
 .traveling {
   background-image: url("https://image.ibb.co/fCQPKG/location_on_road_1.png");
   background-size:32px 32px;
