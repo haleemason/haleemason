@@ -17,5 +17,8 @@ module.exports = {
     'vue'
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    'vue/require-v-for-key': 'off',
+    'vue/no-parsing-error': 'off'
+  }
 }
