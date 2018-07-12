@@ -1,5 +1,7 @@
 $primary: #48c591;
 $dark: #212529;
+$info: #6ec8dc;
+
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "./bootstrap-theme";
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Space+Mono');
@@ -17,4 +19,25 @@ h1, h2, h3, h4, h5, h6{
 
 .btn-primary, .badge-primary {
     color: #ffffff;
+}
+
+.btn-link {
+  cursor: pointer;
+}
+
+slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.badge-primary[href]:hover, .badge-primary[href]:focus {
+    color: white;
+    text-decoration: underline;
 }

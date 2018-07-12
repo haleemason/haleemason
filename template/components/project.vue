@@ -19,7 +19,7 @@
       </a>
   </div>
   <div class="card-body">
-    <h4>{{project.title}}</h4>
+    <h4 class="btn-link"><a :href="project.url" target="_blank" class="text-dark">{{project.title}}</a></h4>
     <p class="card-text">{{project.description}}</p>
     <div class="d-flex justify-content-between align-items-center">
       <div class="btn-group">
@@ -36,6 +36,12 @@ export default {
     'project',
     'index',
   ],
+  data() {
+    return {
+    };
+  },
+  methods: {
+  },
 }
 </script>
 <style scoped>
