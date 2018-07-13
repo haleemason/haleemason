@@ -14,12 +14,14 @@
         </h2>
       </p>
     </article>
+    <h2 class="text-center">Projects</h2>
     <hr class="mb-3">
     <article class="row py-5">
       <div class=" col-lg-4 col-md-6 col-sm-12" v-for="(proj, index) in projects">
         <project :project="proj" :index="index" />
       </div>
     </article>
+    <h2 class="text-center">Timeline</h2>
     <hr>
     <article class="row py-5 container">
       <div class="py-2 d-inline" v-for="(event, index) in timeline" :id="`timeline${index}`">
