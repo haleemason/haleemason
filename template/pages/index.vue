@@ -2,42 +2,57 @@
 <main role="main">
   <section class="container">
     <article class="jumbotron bg-white text-center" style="height:700px; margin-top: 30vh">
-      <h1 class="jumbotron-heading">Ryan Mason</h1>
+      <h1 class="jumbotron-heading mb-0 pb-0">Ryan Mason</h1>
+      <div><small class="badge badge-primary mb-2 text-white">ryanmasonjar@gmail.com</small></div>
       <p class="lead text-muted">
-        I Graduated from Rochester Institute of Technology with my Bachelors in Information Technology. Using my knowledge of web development my goal is to provide a product that is clean, easily maintainable and to give the audience exactly what they need.
+        I Graduated from Rochester Institute of Technology with my Bachelors in Information Technology. While there I grew to love web design and development. Skilled with programming, documenting, testing, and bug fixing to produce the cleanest code. proficient with a wide variety of web development frameworks. always expanding my knowledge of user experience and interface design.
       </p>
       <p class="lead">
         <h2 class="text-muted">
           <a href="https://github.com/Rytiggy/" target="_blank"><i class="fab fa-github m-2 text-dark"></i></a>
-          <a href=""><i class="fab fa-linkedin-in m-2" style="color:#0077b5"></i></a>
-          <a href=""><i class="fas fa-at m-2" style="color:#dc493d"></i></a>
+          <a href="https://www.linkedin.com/in/ryanmichaelmason/" target="_blank"><i class="fab fa-linkedin-in m-2" style="color:#0077b5"></i></a>
+          <a href="mailto:ryanmasonjar@gmail.com"><i class="fas fa-at m-2" style="color:#dc493d"></i></a>
         </h2>
+        <!-- <a href="/images/myw3schoolsimage.jpg" download>Download Resume</a> -->
       </p>
     </article>
     <h2 class="text-center">Projects</h2>
     <hr class="mb-3">
     <article class="row py-5">
-      <div class=" col-lg-4 col-md-6 col-sm-12" v-for="(proj, index) in projects">
+      <div class=" col-lg-4 col-md-6 col-sm-12" v-for="(proj, index) in projects" :key="index">
         <project :project="proj" :index="index" />
       </div>
     </article>
     <h2 class="text-center">Timeline</h2>
     <hr>
     <article class="row py-5 container">
-      <div class="py-2 d-inline" v-for="(event, index) in timeline" :id="`timeline${index}`">
+      <div class="py-2 d-inline" v-for="(event, index) in timeline" :id="`timeline${index}`" :key="index">
         <h3 class="mb-0">{{event.title}} <span class="lead text-muted"> {{event.date}}</span></h3>
-        <a :href="company.url" target="_blank" class="badge badge-primary mt-1" v-for="company in event.compaies" :style="`background:${company.color}`">{{company.name}}</a>
+        <a :href="company.url" target="_blank" class="badge badge-primary mt-1" v-for="(company, i) in event.compaies" :style="`background:${company.color}`" :key="i">{{company.name}}</a>
         <p class="lead text-muted" v-html="event.description"></p>
       </div>
     </article>
+    <!-- <h2 class="text-center">Testimonials</h2>
+    <hr>
+    <article class="row py-5 justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12" v-for="(testimonial, index) in testimonials" :key="index">
+        <div class="card m-1">
+          <div class="card-body">
+            <h5 class="card-title m-0 mb-1">{{testimonial.name}}</h5>
+            <p class="card-text mb-1"><i>{{testimonial.quote}}</i></p>
+            <span target="_blank" class="badge badge-primary" :style="`background:${context.color}`" v-for="(context, i) in testimonial.context" :key="i">{{context.title}}</span>
+          </div>
+        </div>
+      </div>
+    </article> -->
     <article class="row py-5">
-      <p class="lead text-muted">
+      <!-- <p class="lead text-muted">
         Skills with programming, documenting, testing, and bug fixing to produce the cleanest code. proficient with a wide variety of web development frameworks. UX UI
       </p>
       <p>
         <a href="#" class="btn btn-primary m-2">Main call to action</a>
         <a href="#" class="btn btn-secondary m-2">Secondary action</a>
-      </p>
+      </p> -->
     </article>
   </section>
 
@@ -54,9 +69,31 @@ export default {
   },
   data() {
     return {
+      testimonials: [
+        {
+          name: 'Janet Wilson',
+          quote: 'Yes it worked. Thank you so much for creating this and for you help.',
+          context: [
+            {
+              title: 'Glance',
+              color: '#390263',
+            },
+          ]
+        },
+        {
+          name: 'Kyle Tedesco',
+          quote: `Thanks for all your help with this, you've been a lifesaver.`,
+          context: [
+            {
+              title: 'Broken Sticks Hockey',
+              color: '#102246',
+            },
+          ]
+        },
+      ],
       timeline: [
         {
-          title: 'Software Engineer',
+          title: 'Software Developer',
           description: `Working at <i>221b</i> specializing in rapid incrimental prototyping, giving our clients beautiful software written using universally-agreed-upon best practices, and utilizing constant user-testing along the way to make sure we're always hitting the bullseye.`,
           date: '2018 - Current',
           compaies: [
@@ -68,7 +105,7 @@ export default {
           ],
         },
         {
-          title: 'Junior Software Engineer',
+          title: 'Junior Software Developer',
           description: `Worked at the <i>Center for Open Science</i> on the Labs team using rapid incremental prototyping to create experimental products.`,
           date: '2017 - 2018',
           compaies: [
@@ -133,11 +170,11 @@ export default {
           title: 'Glance',
           description: 'Glance is a solution for use with Fitbit devices to view your blood glucose levels along with a variety of other health stats on the watch face. You can see your stats at a glance!',
           technologys: [{
-            name: 'Fitbit Studio',
+            name: 'Fitbit SDK',
             color: '#00B0B9'
           }, ],
           images: [{
-            url: 'https://image.ibb.co/d4JNKd/ionic_and_versa.png',
+            url: 'https://image.ibb.co/fbiG9U/versa-Ionic.png',
             active: 'active',
           }, ],
           date: 'Ongoing',
@@ -145,7 +182,7 @@ export default {
         },
         {
           title: 'Talk About',
-          description: 'Talk About is a dynamic vue componenet built to be eaily droped in to any codebase. Commenting made easy!',
+          description: 'Talk About is a dynamic vue component built to be eaily droped in to any codebase. Commenting made easy!',
           technologys: [
             {
               name: 'Vue',
@@ -219,10 +256,16 @@ export default {
         {
           title: 'OSF Pages',
           description: 'OSF Pages is an Open Science Framework (OSF) addon and website builder that helps OSF users build beautiful websites very quickly using their existing project details.',
-          technologys: [{
+          technologys: [
+          {
             name: 'Ember',
             color: '#E04E39'
-          }, ],
+          },
+          {
+            name: 'Django',
+            color: '#152c1f'
+          }
+        ],
           images: [{
               url: 'https://image.ibb.co/hok97T/Screen_Shot_2018_07_10_at_3_04_00_AM.png',
               active: 'active',
@@ -242,4 +285,8 @@ export default {
 </script>
 
 <style>
+.person {
+  width: 100px;
+  height: 100px;
+}
 </style>

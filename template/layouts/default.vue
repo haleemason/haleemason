@@ -20,6 +20,15 @@ body {
   border-color: #212529;
 }
 
+@media (max-width: 600px) {
+  body {
+      border-width: 15px;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
