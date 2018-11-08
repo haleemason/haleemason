@@ -5,7 +5,7 @@
       <h1 class="jumbotron-heading mb-0 pb-0">Ryan Mason</h1>
       <div><small class="badge badge-primary mb-2 text-white">ryanmasonjar@gmail.com</small></div>
       <p class="lead text-muted">
-        I Graduated from Rochester Institute of Technology with my Bachelors in Information Technology. While there I grew to love web design and development. Skilled with programming, documenting, testing, and bug fixing to produce the cleanest code. proficient with a wide variety of web development frameworks. always expanding my knowledge of user experience and interface design.
+        I Graduated from Rochester Institute of Technology with my Bachelors in Information Technology. While there I grew to love web design and development. Skilled with programming, documenting, testing, and bug fixing to produce the cleanest code. Proficient with a wide variety of web development frameworks. Always expanding my knowledge of user experience and interface design.
       </p>
       <p class="lead">
         <h2 class="text-muted">
@@ -27,8 +27,9 @@
     <hr>
     <article class="row py-5 container">
       <div class="py-2 d-inline" v-for="(event, index) in timeline" :id="`timeline${index}`" :key="index">
-        <h3 class="mb-0">{{event.title}} <span class="lead text-muted"> {{event.date}}</span></h3>
-        <a :href="company.url" target="_blank" class="badge badge-primary mt-1" v-for="(company, i) in event.compaies" :style="`background:${company.color}`" :key="i">{{company.name}}</a>
+        <h3 class="mb-0">{{event.title}}</h3>
+        <div class="lead text-muted"> {{event.date}}</div>
+        <a :href="company.url" target="_blank" class="badge badge-primary mb-1" v-for="(company, i) in event.compaies" :style="`background:${company.color}`" :key="i">{{company.name}}</a>
         <p class="lead text-muted" v-html="event.description"></p>
       </div>
     </article>
