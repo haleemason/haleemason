@@ -3,15 +3,17 @@
   <section class="container">
     <article class="jumbotron bg-white text-center" style="height:700px; margin-top: 30vh">
       <h1 class="jumbotron-heading mb-0 pb-0">Ryan Mason</h1>
-      <div><small class="badge badge-primary mb-2 text-white">ryanmasonjar@gmail.com</small></div>
+      <div>
+        <small class="badge badge-primary mb-2 text-white" style="unicode-bidi: bidi-override; direction: rtl;">moc.liamg@rajnosamnayr</small>
+      </div>
       <p class="lead text-muted">
         I graduated from Rochester Institute of Technology with my Bachelors in Information Technology. While there I grew to love web design and development. Skilled with programming, documenting, testing, and bug fixing to produce the cleanest code. Proficient with a wide variety of web development frameworks. Always expanding my knowledge of user experience and interface design.
       </p>
       <p class="lead">
         <h2 class="text-muted">
-          <a href="https://github.com/Rytiggy/" target="_blank"><i class="fab fa-github m-2 text-dark"></i></a>
           <a href="https://www.linkedin.com/in/ryanmichaelmason/" target="_blank"><i class="fab fa-linkedin-in m-2" style="color:#0077b5"></i></a>
-          <a href="mailto:ryanmasonjar@gmail.com"><i class="fas fa-at m-2" style="color:#dc493d"></i></a>
+          <a href="https://github.com/Rytiggy/" target="_blank"><i class="fab fa-github m-2 text-dark"></i></a>   
+          <a href="https://twitter.com/ryanmasonjar"><i class="fab fa-twitter m-2" style="color:#1da1f2"></i></a>
         </h2>
         <!-- <a href="/images/myw3schoolsimage.jpg" download>Download Resume</a> -->
       </p>
