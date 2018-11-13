@@ -5,7 +5,7 @@
       <h1 class="jumbotron-heading mb-0 pb-0">Ryan Mason</h1>
       <div><small class="badge badge-primary mb-2 text-white">ryanmasonjar@gmail.com</small></div>
       <p class="lead text-muted">
-        I Graduated from Rochester Institute of Technology with my Bachelors in Information Technology. While there I grew to love web design and development. Skilled with programming, documenting, testing, and bug fixing to produce the cleanest code. Proficient with a wide variety of web development frameworks. Always expanding my knowledge of user experience and interface design.
+        I graduated from Rochester Institute of Technology with my Bachelors in Information Technology. While there I grew to love web design and development. Skilled with programming, documenting, testing, and bug fixing to produce the cleanest code. Proficient with a wide variety of web development frameworks. Always expanding my knowledge of user experience and interface design.
       </p>
       <p class="lead">
         <h2 class="text-muted">
@@ -238,10 +238,16 @@ export default {
         {
           title: 'Broken Sticks Hockey',
           description: 'Broken Sticks Hockey was created to bring a great pick-up hockey experience to the Buffalo, NY area.',
-          technologys: [{
-            name: 'HTML',
-            color: '#e44d26'
-          }, ],
+          technologys: [
+            {
+              name: 'HTML',
+              color: '#e44d26'
+            }, 
+            {
+              name: 'Javascript',
+              color: '#ffc907'
+            } 
+          ],
           images: [{
               url: 'https://image.ibb.co/ergcu8/Screen_Shot_2018_07_10_at_2_52_44_AM.png',
               active: 'active',
