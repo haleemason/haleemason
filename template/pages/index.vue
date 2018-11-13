@@ -13,7 +13,7 @@
         <h2 class="text-muted">
           <a href="https://www.linkedin.com/in/ryanmichaelmason/" target="_blank"><i class="fab fa-linkedin-in m-2" style="color:#0077b5"></i></a>
           <a href="https://github.com/Rytiggy/" target="_blank"><i class="fab fa-github m-2 text-dark"></i></a>   
-          <a href="https://twitter.com/ryanmasonjar"><i class="fab fa-twitter m-2" style="color:#1da1f2"></i></a>
+          <a href="https://twitter.com/ryanmasonjar" target="_blank"><i class="fab fa-twitter m-2" style="color:#1da1f2"></i></a>
         </h2>
         <!-- <a href="/images/myw3schoolsimage.jpg" download>Download Resume</a> -->
       </p>
