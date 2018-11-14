@@ -247,7 +247,7 @@ export default {
             }, 
             {
               name: 'Javascript',
-              color: '#ffc907'
+              color: '#efd65c'
             } 
           ],
           images: [{
