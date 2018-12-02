@@ -14,11 +14,6 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-body {
-  border-style: solid;
-  border-width: 25px;
-  border-color: #212529;
-}
 
 @media (max-width: 600px) {
   body {
