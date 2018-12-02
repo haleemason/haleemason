@@ -2,7 +2,7 @@
 <main role="main">
   <section class="container">
     <article class="jumbotron bg-white text-center" style="height:700px; margin-top: 30vh">
-      <h1 class="jumbotron-heading mb-0 pb-0">Ryan Mason</h1>
+      <h1 class="jumbotron-heading mb-0 pb-0">Halee Mason</h1>
       <div>
         <small class="badge badge-primary mb-2 text-white" style="unicode-bidi: bidi-override; direction: rtl;">moc.liamg@rajnosamnayr</small>
       </div>
@@ -166,11 +166,23 @@ export default {
               url: 'http://www.rit.edu/',
             }
           ],
+        },
+        {
+          title: 'Elder Research',
+          description: 'Develops, implements, and deploys predictive models and protocols for mining production data sources from a variety of data stores including Elasticsearch, Redshift, SQL Server, and HDFS.',
+          date: '2017 - Present',
+          compaies: [
+            {
+              name: 'Data Scientist',
+              color: '#b56422',
+              url: 'http://www.rit.edu/',
+            }
+          ],
         }
       ],
       projects: [
         {
-          title: 'Glance',
+          title: 'Hacked Cville',
           description: 'Glance is a solution for use with Fitbit devices to view your blood glucose levels along with a variety of other health stats on the watch face. You can see your stats at a glance!',
           technologys: [{
             name: 'Fitbit SDK',
