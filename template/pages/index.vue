@@ -4,16 +4,16 @@
     <article class="jumbotron bg-white text-center" style="height:700px; margin-top: 30vh">
       <h1 class="jumbotron-heading mb-0 pb-0">Halee Mason</h1>
       <div>
-        <small class="badge badge-primary mb-2 text-white" style="unicode-bidi: bidi-override; direction: rtl;">moc.liamg@rajnosamnayr</small>
+        <small class="badge badge-primary mb-2 text-white" style="unicode-bidi: bidi-override; direction: rtl;">moc.liamg@nosam.eelah</small>
       </div>
       <p class="lead text-muted">
-        I graduated from Rochester Institute of Technology with my Bachelors in Information Technology. While there I grew to love web design and development. Skilled with programming, documenting, testing, and bug fixing to produce the cleanest code. Proficient with a wide variety of web development frameworks. Always expanding my knowledge of user experience and interface design.
+        Experienced Data Scientist with a MS in Data Science and a demonstrated history of working in the information technology and consulting services industry. Skilled in developing and deploying analytic models, communicating with clients, and utilizing Python, Spark, AWS, and R proficiently.
       </p>
       <p class="lead">
         <h2 class="text-muted">
-          <a href="https://www.linkedin.com/in/ryanmichaelmason/" target="_blank"><i class="fab fa-linkedin-in m-2" style="color:#0077b5"></i></a>
-          <a href="https://github.com/Rytiggy/" target="_blank"><i class="fab fa-github m-2 text-dark"></i></a>   
-          <a href="https://twitter.com/ryanmasonjar" target="_blank"><i class="fab fa-twitter m-2" style="color:#1da1f2"></i></a>
+          <a href="https://www.linkedin.com/in/haleemason/" target="_blank"><i class="fab fa-linkedin-in m-2" style="color:#0077b5"></i></a>
+          <a href="https://github.com/haleemason/" target="_blank"><i class="fab fa-github m-2 text-dark"></i></a>   
+          <a href="https://twitter.com/czayta" target="_blank"><i class="fab fa-twitter m-2" style="color:#1da1f2"></i></a>
         </h2>
         <!-- <a href="/images/myw3schoolsimage.jpg" download>Download Resume</a> -->
       </p>
@@ -168,44 +168,55 @@ export default {
           ],
         },
         {
-          title: 'Elder Research',
+          title: 'Elder Research, Inc.',
           description: 'Develops, implements, and deploys predictive models and protocols for mining production data sources from a variety of data stores including Elasticsearch, Redshift, SQL Server, and HDFS.',
-          date: '2017 - Present',
+          date: '2016 - Present',
           compaies: [
             {
-              name: 'Data Scientist',
-              color: '#b56422',
-              url: 'http://www.rit.edu/',
+              name: 'Data Scientist ',
+              color: '#0d305a',
+              url: 'https://www.elderresearch.com/',
+            },
+            {
+              name: 'Data Analyst',
+              color: '#0d305a',
+              url: 'https://www.elderresearch.com/',
             }
           ],
         }
       ],
       projects: [
         {
-          title: 'Hacked Cville',
-          description: 'Glance is a solution for use with Fitbit devices to view your blood glucose levels along with a variety of other health stats on the watch face. You can see your stats at a glance!',
-          technologys: [{
-            name: 'Fitbit SDK',
-            color: '#00B0B9'
-          }, ],
+          title: 'Charlottesville Open Data Science Challenge',
+          description: 'The goal of the challenge was to use open data and crowdsourcing to engage the growing data science community within Charlottesville and the surrounding area to help the city better understand pedestrian use of the Downtown Mall. The Mall is one of the most successful pedestrian malls in the nation and is a vibrant collection of more than 120 shops and 30 restaurants and the city wants to ensure that capital infrastructure plans are prioritized effectively.',
+          technologys: [
+            {
+              name: 'Python',
+              color: '#B4FBB8'
+            }, 
+            {
+              name: 'Vue',
+              color: '#41B883'
+            },
+          ],
           images: [{
-            url: 'https://image.ibb.co/fbiG9U/versa-Ionic.png',
+            url: 'https://image.ibb.co/gAW5Px/panel1.png',
             active: 'active',
           }, ],
-          date: 'Ongoing',
-          url: 'https://github.com/Rytiggy/Glance',
+          date: 'Completed',
+          url: 'https://haleemason.github.io/hackd-web/#/',
         },
         {
-          title: 'Talk About',
-          description: 'Talk About is a dynamic vue component built to be eaily droped in to any codebase. Commenting made easy!',
+          title: 'Riot Games League API',
+          description: 'Continuing education effort to work with the Developer API to collect, clean, and utilize League of Legends data for analysis.',
           technologys: [
             {
               name: 'Vue',
               color: '#41B883'
             },
             {
-              name: 'Nuxt',
-              color: '#3b806f'
+              name: 'Python',
+              color: '#B4FBB8'
             },
           ],
           images: [
@@ -222,82 +233,8 @@ export default {
               active: '',
             },
          ],
-          date: '5-2-18',
-          url: 'http://talk-about.surge.sh/#/',
-        },
-        {
-          title: 'Public Access Submission System',
-          description: 'The Public Access Submission System (PASS) is a platform to assist researchers in complying with the access policies of their funders and institutions.',
-          technologys: [{
-              name: 'Ember',
-              color: '#E04E39'
-            },
-            {
-              name: 'Fadora',
-              color: '#c7353c'
-            },
-          ],
-          images: [{
-              url: 'https://image.ibb.co/efq6Mo/pass_ui.png',
-              active: 'active',
-            },
-            {
-              url: 'https://image.ibb.co/emdqE8/image1.png',
-              active: '',
-            },
-          ],
-          date: '6-30-18',
-          url: 'https://pass.jhu.edu/',
-        },
-        {
-          title: 'Broken Sticks Hockey',
-          description: 'Broken Sticks Hockey was created to bring a great pick-up hockey experience to the Buffalo, NY area.',
-          technologys: [
-            {
-              name: 'HTML',
-              color: '#e44d26'
-            }, 
-            {
-              name: 'Javascript',
-              color: '#efd65c'
-            } 
-          ],
-          images: [{
-              url: 'https://image.ibb.co/ergcu8/Screen_Shot_2018_07_10_at_2_52_44_AM.png',
-              active: 'active',
-            },
-            {
-              url: 'https://image.ibb.co/f3481o/Screen_Shot_2018_07_10_at_2_54_08_AM.png',
-              active: '',
-            }
-          ],
-          date: '3-08-18',
-          url: 'http://www.brokenstickshockey.com/',
-        },
-        {
-          title: 'OSF Pages',
-          description: 'OSF Pages is an Open Science Framework (OSF) addon and website builder that helps OSF users build beautiful websites very quickly using their existing project details.',
-          technologys: [
-          {
-            name: 'Ember',
-            color: '#E04E39'
-          },
-          {
-            name: 'Django',
-            color: '#152c1f'
-          }
-        ],
-          images: [{
-              url: 'https://image.ibb.co/hok97T/Screen_Shot_2018_07_10_at_3_04_00_AM.png',
-              active: 'active',
-            },
-            {
-              url: 'https://image.ibb.co/haWP7T/Screen_Shot_2018_07_10_at_3_09_16_AM.png',
-              active: '',
-            }
-          ],
-          date: '2-01-18',
-          url: 'https://github.com/cos-labs/osfpages',
+          date: 'Ongoing',
+          url: 'https://github.com/haleemason/riotgames/tree/develop',
         },
       ]
     };
